@@ -70,7 +70,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         admins = await get_admins(Config.CHAT)
         if query.data.startswith("info"):
             me, you = query.data.split("_")
-            text="Join @subin_works"
+            text="Join @mirrorcloudbd"
             if you == "volume":
                 await query.answer()
                 await query.message.edit_reply_markup(reply_markup=await volume_buttons())
@@ -160,7 +160,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             
         if not query.from_user.id in admins:
             await query.answer(
-                "😒 Played Joji.mp3",
+                "কি রে ভাই , বিরক্ত করিস কেন ",
                 show_alert=True
                 )
             return
@@ -393,9 +393,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         elif query.data=="replay":
             if not Config.playlist:
-                await query.answer("No songs in playlist", show_alert=True)
+                await query.answer("Playlist এ‌ কোনো গান পেলাম না , ব্যাপার কি 🥱", show_alert=True)
             else:
-                await query.answer("trying to restart player")
+                await query.answer("তুই ২ মিনিট দাঁড়িয়ে থাক , ৫ মিনিট এ restart করার চেষ্টা করতেছি 😁😁")
                 await restart_playout()
                 await sleep(1)
             await query.message.edit_reply_markup(reply_markup=await get_buttons())
