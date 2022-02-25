@@ -129,11 +129,11 @@ async def start(client, message):
         return
     buttons = [
         [
-            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),
-            InlineKeyboardButton('🧩 Source', url='https://github.com/subinps/VCPlayerBot')
+            InlineKeyboardButton('🌹 Update Channel', url='https://t.me/mirrorcloudbd'),
+            InlineKeyboardButton('🌈 Group', url='https://t.me/+Dw37PB5UzAE4MGFl')
         ],
         [
-            InlineKeyboardButton('👨🏼‍🦯 Help', callback_data='help_main'),
+            InlineKeyboardButton('⭐ Help', callback_data='help_main'),
             InlineKeyboardButton('🗑 Close', callback_data='close'),
         ]
     ]
@@ -188,11 +188,11 @@ async def show_help(client, message):
 async def repo_(client, message):
     buttons = [
         [
-            InlineKeyboardButton('🧩 Repository', url='https://github.com/subinps/VCPlayerBot'),
-            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),     
+            InlineKeyboardButton('🌟 My Group', url='https://t.me/+Dw37PB5UzAE4MGFl'),
+            InlineKeyboardButton('✅ Update Channel', url='https://t.me/mirrorcloudbd'),     
         ],
         [
-            InlineKeyboardButton("🎞 How to Deploy", url='https://youtu.be/mnWgZMrNe_0'),
+            InlineKeyboardButton("😴 How to make", url='https://youtu.be/c/blackmaxbd'),
             InlineKeyboardButton('🗑 Close', callback_data='close'),
         ]
     ]
