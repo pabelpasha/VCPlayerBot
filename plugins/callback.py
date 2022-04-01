@@ -345,7 +345,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         elif query.data == "shuffle":
             if not Config.playlist:
-                await query.answer("Playlist is empty.", show_alert=True)
+                await query.answer("Playlist is empty.\n join @BDBOTS ✅
+@Woxreview ✅
+@MirrorCloudbd ✅
+@Blackmaxbd ✅
+@International_Love_Squad ❤️✅
+", show_alert=True)
                 return
             await shuffle_playlist()
             await query.answer("Playlist shuffled.")
@@ -358,7 +363,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 await query.answer("Already Paused", show_alert=True)
             else:
                 await pause()
-                await query.answer("Stream Paused")
+                await query.answer("Stream Paused \n @BDBOTS ✅ @Woxreview ✅ @MirrorCloudbd ✅ @Blackmaxbd ✅ @International_Love_Squad ❤️✅
+")
                 await sleep(1)
 
             await query.message.edit_reply_markup(reply_markup=await get_buttons())
@@ -445,7 +451,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == 'restart':
             if not Config.CALL_STATUS:
                 if not Config.playlist:
-                    await query.answer("Player is empty, starting STARTUP_STREAM.")
+                    await query.answer("কোন গান চালু করা নাই 😔 , টিভি চালু করা হয়েছে \ @BDBOTS ✅ @Woxreview ✅ @MirrorCloudbd ✅
+@Blackmaxbd ✅ @International_Love_Squad ❤️✅
+")
                 else:
                     await query.answer('Resuming the playlist')
             await query.answer("Restrating the player")
